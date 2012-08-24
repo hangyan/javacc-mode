@@ -19,7 +19,7 @@
 
 ;;this is pretty much all I'm adding
 (defconst javacc-keyword-re
-  (regexp-opt '("DEBUG_PARSER" "DEBUG_LOOKAHEAD" "DEBUG_TOKEN_MANAGER"
+    (regexp-opt '("DEBUG_PARSER" "DEBUG_LOOKAHEAD" "DEBUG_TOKEN_MANAGER"
                  "COMMON_TOKEN_ACTION" "IGNORE_CASE" "CHOICE_AMBIGUITY_CHECK"
                  "OTHER_AMBIGUITY_CHECK" "STATIC LOOKAHEAD" "ERROR_REPORTING"
                  "USER_TOKEN_MANAGER"  "USER_CHAR_STREAM" "JAVA_UNICODE_ESCAPE"
@@ -28,7 +28,16 @@
                  "PARSER_BEGIN" "PARSER_END"
                  "TOKEN" "SKIP" "MORE" "SPECIAL_TOKEN"
                  "DEBUG" "IGNORE_IN_BNF" "MULTI" "NODE_DEFAULT_VOID"
-                 "NODE_EXTENDS" "VISITOR" "options") 'words))
+                 "NODE_EXTENDS" "VISITOR" "options"
+                 "NODE_PREFIX" "BUILD_NODE_FILES" "NODE_CLASS"
+                 "NODE_FACTORY" "NODE_PACKAGE" " NODE_EXTENDS"
+                 "NODE_SCOPE_HOOK" "NODE_USES_PARSER" "TRACK_TOKENS"
+                 "VISITOR_DATA_TYPE" "VISITOR_RETURN_TYPE" "VISITOR_EXCEPTION"
+                 "JJTREE_OUTPUT_DIRECTORY"
+                 "OUTPUT_DIRECTORY" "COMMON_TOKEN_ACTION" "TOKEN_FACTORY"
+                 "CACHE_TOKENS" "TOKEN_EXTENDS" "TOKEN_MANAGER_USES_PARSER"
+                 "SUPPORT_CLASS_VISIBILITY_PUBLIC") 'words))
+  
 
 ;;;add new words to the java keywords (TOKEN shows up the wrong colour)
 (defvar javacc-font-lock-keywords 
